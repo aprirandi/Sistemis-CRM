@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ngapp="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="itwarcraft@gmail.com" />
+    <title>Create Invoice - Sistemis CRM</title>
+    <meta name="description" content="Semantic UI Admin" />
+    <meta name="keywords" content="Semantic UI Admin" />
+    <link rel="stylesheet" type="text/css" class="ui" href="assets/lib/font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="assets/lib/semantic/css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/lib/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" class="ui" href="assets/css/theme.css">
+    <script src="assets/lib/jquery/jquery.2.1.0.min.js"></script>
+    <script src="assets/lib/semantic/js/semantic.min.js"></script>
+    <script src="assets/lib/angularjs/angular.min.js"></script>
+    <script src="assets/lib/chart.js/Chart.min.js"></script>
+</head>
+
+<body>
+    <!-- Logo -->
+    <div id="index-h" class="ui fixed transparent main menu index-h">
+        <div class="container index-head ">
+            <div class="title item">
+                <h3 class="ui header white">
+                    <i class="settings icon"></i>
+                    Sistemis CRM
+                </h3>
+            </div>
+            <!-- Navbar -->
+            <div class="item fmenuitem">
+                <div class="ui maincolor inverted labeled fluid icon menu">
+                    <a class="white item ">
+                        <i class="home large icon"></i>
+                        Dashboard
+                    </a>
+                    <a class="white item activex" href="invoice.html">
+                        <i class="settings large icon"></i>
+                        Invoice
+                    </a>
+                    <a class="blue item">
+                        <i class="lab large icon"></i>
+                        Quotation
+                    </a>
+                </div>
+            </div>
+
+            <!-- Search dan Profile -->
+            <div class="right menu">
+                <div class="title item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search icon"></i>
+                    </div>
+                </div>
+
+                <div class="title item borderless">
+                    <!-- Avatar -->
+                    <img class="ui avatar image" src="assets/images/avatar-1.jpg">
+                </div>
+                <div id="index-nickname" class="ui top pointing dropdown link item">
+                    Superman<i class="dropdown icon"></i>
+                    <div class="menu ui visible horizontal flip">
+                        <a href="changepwd.html" class="item"><i class="edit icon"></i>Ubah Password</a>
+                        <a href="useredit.html" class="item"><i class="edit icon"></i>Edit Profile</a>
+                        <a href="logout.html" class="item"><i class="close icon"></i>Logout</a>
+                    </div>
+                </div>
+                <div class="title item"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content" class="ui celled relaxed grid basic segment content">
+        <!-- Dashboard -->
+        <div class="eleven wide column" style="width:100%;">
+            <!-- breadcrumb -->
+            <div id="content-nav" class="ui breadcrumb">
+                <a class="section">Sistemis</a>
+                <div class="divider">/</div>
+                <a class="section" href="invoice.html">Invoice</a>
+                <div class="divider">/</div>
+                <a class="section">Create Invoice</a>
+            </div>
+            <div>
+                <h2>Create Invoice 1</h2>
+            </div>
+            <div class="ui clearing divider">
+            </div>
+            <div class="container">
+                <div class="ui celled grid">
+                    <div class="row">
+                        <div class="column">
+                            <div class="ui center grid">
+                                <div class="sixteen wide column">
+                                    <h2 class="ui center">Invoice</h4>
+                                </div>
+                            </div>
+                            <div class="ui grid">
+                                <div class="eight wide column">
+                                    <h4>To:</h4>
+                                    <h3>Divisi Pengelolaan Keuangan</h3>
+                                    <p>PT ASABRI
+                                        <br> Jl. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="eight wide column">
+                                    <h4>Invoice No:</h4>
+                                    <h3>INV/20201/sadoja/213</h3>
+                                    <p>Invoice Date:
+                                        <br>19-10-2021
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="coloum">
+                        <table class="ui orange sortable table segment">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Description</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Pengerjaan total pembuatan database perusahaan dengan metode yang telah
+                                        disepakati di awal</td>
+                                    <td>Rp62.000.000,-</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Tambah Hosting + Domain</td>
+                                    <td>Rp1.000.000,-</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>PPN</td>
+                                    <td>Rp6.300.000</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td> <b>Total</b></td>
+                                    <td> <b>Rp69.300.000,-</b></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="ui celled grid">
+                    <div class="row">
+                        <div class="column">
+                            <div class="ui grid">
+                                <div class="eight wide column">
+                                    <h4>Pembayaran ditujukan kepada:</h4>
+                                    <div class="ui fluid selection dropdown">
+                                        <input type="hidden" name="user">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Select Bank</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="bsi">
+                                                <p>Bank BSI</p>
+                                            </div>
+                                            <div class="item" data-value="bnisyariah">
+                                                <p>Bank BNI Syariah</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="eight wide column">
+                                    <h4>Tempat</h4>
+                                    <div class="title item fluid">
+                                        <div class="ui icon input">
+                                            <input type="text" placeholder="Ketik Tempat">
+                                        </div>
+                                    </div>
+                                    <h4>Tanggal Penandatanganan</h4>
+                                    <div class="ui fluid selection">
+                                        <div class="ui calendar" id="date_calendar">
+                                            <div class="ui input left icon">
+                                                <i class="calendar icon"></i>
+                                                <input type="text" placeholder="Date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4>Penandatangan</h4>
+                                    <div class="ui fluid selection dropdown">
+                                        <input type="hidden" name="user">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">Select Penandatangan</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="bsi">
+                                                <p>Sugihartono</p>
+                                            </div>
+                                            <div class="item" data-value="bnisyariah">
+                                                <p>Wisnu Manupraba</p>
+                                            </div>
+                                            <div class="item" data-value="bnisyariah">
+                                                <p>Indra Sakti</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <a href="invoice.html">
+                        <button class="ui gray button">
+                            Cancel
+                        </button>
+                    </a>
+                    <a href="invoice.html">
+                        <button class="ui blue button">
+                            Simpan
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(".ui.dropdown").dropdown();
+        $(".ui.accordion").accordion();
+        $('#date_calendar')
+                .calendar({
+                    type: 'date'
+                })
+                ;
+    </script>
+
+    <body>
+
+</html>
